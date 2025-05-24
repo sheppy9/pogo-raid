@@ -11,7 +11,7 @@ let pokemonData = [];
 $(document).ready(function() {
     let table = $('#pokemonTable').DataTable({
         data: [],
-        searching: false,
+        dom: 'tipr',
         columns: [
             { data: 'name' },
             { data: null, render: function(data, type, row) {
