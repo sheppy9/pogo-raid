@@ -76,6 +76,7 @@ $(document).ready(function() {
 
     document.getElementById('reloadButton').addEventListener('click', function() {
         fetchDataAndStoreInLocalStorage();
+        searchInput.value = '';
     });
 });
 
