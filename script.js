@@ -73,6 +73,10 @@ $(document).ready(function() {
         table.rows.add(filteredData);
         table.draw();
     });
+
+    document.getElementById('reloadButton').addEventListener('click', function() {
+        fetchDataAndStoreInLocalStorage();
+    });
 });
 
 

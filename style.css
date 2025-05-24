@@ -36,8 +36,16 @@ main {
 
 #search {
     width: 100%;
-    margin-bottom: 10px;
     height: calc(2.3rem + 20px);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+}
+
+#reloadButton {
+    margin-left: 10px;
 }
 
 /* Dark theme overrides for DataTables */
