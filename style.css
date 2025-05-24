@@ -44,6 +44,11 @@ main {
     align-items: center;
 }
 
+.custom-button {
+    background-color: #444 !important;
+    color: white !important;
+}
+
 #reloadButton {
     margin-left: 10px;
     opacity: 0;

@@ -15,7 +15,7 @@ $(document).ready(function() {
         columns: [
             { data: 'name' },
             { data: null, render: function(data, type, row) {
-                return `<button class="waves-effect waves-light btn" onclick="copyToClipboard(\'${row.search.replace(/'/g, "\\'")}\' )">Copy search phrase</button>`;
+                return `<button class="waves-effect waves-light btn copy-btn" onclick="copyToClipboard(\'${row.search.replace(/'/g, "\\'")}\' )">Copy search phrase</button>`;
             }}
         ],
         pageLength: 10
