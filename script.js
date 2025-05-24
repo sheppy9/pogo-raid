@@ -79,10 +79,10 @@ $(document).ready(function() {
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text)
         .then(() => {
-            M.toast({ html: 'Copied to clipboard!', classes: 'green rounded', displayLength: 3000, position: 'topRight' });
+            M.toast({ html: 'Copied to clipboard!', classes: 'green rounded', displayLength: 3000});
         })
         .catch(err => {
             console.error('Failed to copy: ', err);
-            M.toast({ html: 'Failed to copy!', classes: 'red rounded', position: 'topRight' });
+            M.toast({ html: 'Failed to copy!', classes: 'red rounded'});
         });
 }

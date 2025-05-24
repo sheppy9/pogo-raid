@@ -118,3 +118,12 @@ main {
         text-align: center;
     }
 }
+
+/* Custom CSS for toast message position */
+.toast {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    transform: none !important;
+}
