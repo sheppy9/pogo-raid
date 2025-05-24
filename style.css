@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.dark-mode {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-mode table {
+    color: white;
+}
+
+.dark-mode table.dataTable {
+    width: 100% !important;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #666;
+}
+
+.dark-mode .card {
+    background-color: #444 !important;
+}
+
+.dark-mode input {
+    color: white !important;
+}
+
+#search {
+    width: 100%;
+    margin-bottom: 10px;
+    height: calc(2.3rem + 20px);
+}
+
+/* Dark theme overrides for DataTables */
+.dark-mode .dataTables_wrapper .dataTables_filter input {
+    color: white !important;
+    border: 1px solid #666 !important;
+}
+
+.dark-mode .dataTables_wrapper .dataTables_length select {
+    background-color: #444 !important;
+    color: white !important;
+    border: 1px solid #666 !important;
+}
+
+.dark-mode .dataTables_wrapper .dataTables_info,
+.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: white !important;
+}
+
+.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: 1px solid #666 !important;
+}
+
+.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #666 !important;
+    color: white !important;
+}
+
+.dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #555 !important;
+    color: white !important;
+}
+
+.dark-mode table.dataTable tbody tr {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.dark-mode table.dataTable tbody td {
+    color: white !important;
+}
+
+.dark-mode table.dataTable tbody td:first-child {
+    font-size: 1.2em;
+}
+
+.dark-mode table.dataTable tbody tr.odd > * {
+    background-color: #444 !important;
+}
+
+.dark-mode table.dataTable tbody tr.even > * {
+    background-color: #666 !important;
+}
+
+.dark-mode table.dataTable.no-footer {
+    border-bottom: 1px solid #666 !important;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        text-align: center;
+    }
+
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        text-align: center;
+    }
+}
