@@ -46,6 +46,7 @@ main {
 
 #reloadButton {
     margin-left: 10px;
+    opacity: 0;
 }
 
 /* Dark theme overrides for DataTables */
