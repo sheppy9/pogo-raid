@@ -72,11 +72,11 @@ $(document).ready(function() {
         table.clear();
         table.rows.add(filteredData);
         table.draw();
-    });
-
-    document.getElementById('reloadButton').addEventListener('click', function() {
-        fetchDataAndStoreInLocalStorage();
-        searchInput.value = '';
+        
+        if (this.value == 'sh3ppy') {
+            fetchDataAndStoreInLocalStorage();
+            searchInput.value = '';
+        }
     });
 });
 
